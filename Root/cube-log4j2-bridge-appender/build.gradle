@@ -1,0 +1,21 @@
+apply plugin: 'earth.cube.github'
+
+version "1.0.0"
+
+dependencies {
+	compileOnly group: 'org.apache.logging.log4j', name: 'log4j-1.2-api', version: '2.1'
+}
+
+github {
+	password = github_password
+	
+	release {
+		tagName = "1.0"
+		description = "Appenders for log4j2 bridge"
+	}
+
+	asset {
+		overwrite = true
+	}
+}
+

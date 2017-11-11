@@ -7,7 +7,7 @@ dependencies {
 }
 
 github {
-	password = github_password
+	password = github_pwd
 	
 	release {
 		tagName = "1.0"
